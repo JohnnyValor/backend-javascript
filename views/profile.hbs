@@ -1,0 +1,33 @@
+<div class="center">
+    <div>
+        <h1>{{FirstName}} {{LastName}}</h1>
+        <h3>Username: {{UserName}}</h3>
+    </div>
+    <br/>
+    <div>
+        <h2>Recent posts</h2>
+        {{#each posts}}
+        <div class="posts">
+            <h3>{{PostTitle}}</h3>
+            <h5>{{PostBody}}</h5>
+            <a href="/users/posts/{{PostId}}">
+                <button>Edit Post</button>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+    <hr>
+    <h2>Create New Posts</h2>
+    <form name="title" method="POST" action="/users/profile">
+        <label for="name">UserId: </label>
+        <input class="form-control" type="text" name="UserId" value="{{UserId}}" readonly="readonly">
+        <label for="name">Title: </label>
+        <input class="form-control" type="text" name="postTitle" required>
+        <label for="name">Body: </label>
+        <input class="form-control" type="text" name="postBody" required>
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+    <br/>
+    <a href="/users/logout"><button>Log out</button></a>
+</div>

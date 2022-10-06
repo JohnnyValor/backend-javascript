@@ -1,0 +1,19 @@
+<script>
+    function onDelete() {
+        $.ajax({
+            url: '{{PostId}}/delete',
+            method: 'DELETE', complete: () => window.location = "/users/editUser/{{UserId}}"
+        })
+    }
+</script>
+
+<div class="login">
+    <h1>{{PostTitle}}</h1>
+    <h2>Details: {{PostBody}}</h2>
+    <div>
+        <button onclick="onDelete()" id="deleteButton">Delete Post </button>
+    </div>
+    <a href="/users/editUser/{{UserId}}">
+        <button>Back To User</button>
+    </a>
+</div>

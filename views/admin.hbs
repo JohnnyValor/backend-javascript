@@ -1,0 +1,13 @@
+<div class="center">
+    <h1>Welcome Admin</h1>
+
+    <h3>Active Users:</h3>
+    {{#each users}}
+    <a href="/users/editUser/{{UserId}}">
+        <button>{{FirstName}} {{LastName}}</button>
+        
+        <hr>
+        {{/each}}
+
+        <a href="/users/logout"><button>Logout</button></a>       
+</div>
