@@ -4,12 +4,6 @@ A backend project for authentication and secure login using JWT and bcrypt.
 
 Features:
 
-    JWT: JSON Web Tokens are used for authentication, ensuring secure and private 
-    communication between the client and server.
-    
-    bcrypt: bcrypt is used to securely hash user passwords, protecting user information 
-    and sensitive data.
-    
     Account Creation and Deletion: Users can create an account and delete it if needed.
     
     User Specific Sign In and Log Out: Users can sign in to their specific account and 
