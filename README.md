@@ -1,6 +1,6 @@
 Backend Security Project
 
-A backend project for authentication and secure data management using JWT and bcrypt.
+A backend project for authentication and secure login using JWT and bcrypt.
 
 Features:
 
@@ -21,15 +21,17 @@ Features:
     Admin View: Admins have the ability to delete any post or user, providing 
     additional control over the content and users on the platform.
     
-    Node.js: The backend of the project is built with Node.js, providing a fast and 
-    efficient solution for server-side programming.
-    
-    Express: Express is used as the web framework for the project, providing a simple 
-    and flexible solution for server-side routing and request handling.
-    
-    SQLite: A SQLite database is used to store the application data, providing a simple 
-    and lightweight solution for data storage and retrieval.
+Built with:
 
+    JSON Web Tokens
+    bcrypt
+    HTML
+    CSS
+    Javascript
+    Node.js
+    Express
+    SQLite
+   
 Admin: JonC
 Password: jonc
 
