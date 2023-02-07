@@ -290,42 +290,6 @@ router.delete('/editUser/:id/delete', (req, res) => {
     });
 });
 
-// admin delete post
-//router.delete('/users/posts/:id/delete', (req, res) => {
-//let postId = parseInt(req.params.id);
-//models.posts
-//.update({
-//Deleted: 'true'
-//},
-//{
-//where: {
-//PostId: postId
-//}
-//})
-//.then(posts => {
-//res.send();
-//});
-//});
-
-// admin delete post2
-// router.delete('/users/editUser/:id/delete', (req, res) => {
-//   ;debugger
-//   let postId = parseInt(req.params.id);
-//   models.posts
-//     .update(
-//       {
-//         Deleted: 'true'
-//       }, {
-//       where: {
-//         postId: postId
-//       }
-//     }
-//     )
-//     .then(posts => {
-//       //models.posts
-//       res.redirect('admin');
-//     });
-// });
 
 // logout, jwt token made null, route to login page
 router.get('/logout', function (req, res) {
