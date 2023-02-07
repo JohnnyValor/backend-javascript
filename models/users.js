@@ -1,5 +1,6 @@
 const bcrypt = require("bcryptjs");
 
+// define "users" with attributes and association
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var users = sequelize.define(
@@ -37,12 +38,14 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
 
+  // associates "users" with "posts"
   users.associate = function (models) {
     users.hasMany(models.posts, {
       foreignKey: 'UserId'
     });
   };
 
+  // compares plain text pw with hashed pw stored in "users"
   users.prototype.comparePassword = function (plainTextPassword) {
     let user = this;
     return bcrypt.compareSync(plainTextPassword, user.Password)
