@@ -1,3 +1,4 @@
+// define "posts" with attributes & associations
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var posts = sequelize.define(
